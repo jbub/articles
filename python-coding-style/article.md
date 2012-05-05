@@ -1,6 +1,6 @@
-# python coding style guide
+## python coding style guide
 
-## whitespace
+### whitespace
 
 * 4 spaces per indentation level
 * no hard tabs
@@ -14,20 +14,20 @@
  
 This is how it should be done:
 
-	def lopata(arg1, arg2, karg1='sup', karg2='abc'):
+	def do_something(arg1, arg2, kwarg1='sup', kwarg2='abc'):
 		"""This is a docstring."""
-		dct = {key: value}
-		lst = [1, 2, 3]
+		my_dict = {"key": "value"}
+		my_list = [1, 2, 3]
 		return False
 
-## naming convections
+### naming convections
 
 * **joined_lower** for functions, methods, attributes
 * **joined_lower** or **ALL_CAPITALS** for constants
 * **StudlyCaps** for classes
 * **attr** for public and **_attr** for private attributes
 
-## long lines
+### long lines
 
 * keep lines below 80 characters in length
 * use backslashes as a last resort
