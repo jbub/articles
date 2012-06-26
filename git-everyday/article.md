@@ -19,9 +19,7 @@ Git allows us to create shortcuts for frequently used commands in form of aliase
 
 	git config --global --get-regexp alias
 
-
 ------
-
 
 ## Branches
 
@@ -57,3 +55,30 @@ This creates a new branch at the same commit as is your current branch.
 
 	git checkout master
 	git merge new_branch
+	
+### Listing branches
+
+	git branch    # local
+	git branch -r # remote
+	git branch -a # local and remote
+	
+------
+	
+## Remotes
+
+Gits lets you define a number of remote repositories to work with.
+
+
+### Adding remotes
+
+	git remote add alias_name user@host.com:repo_name.git
+	
+### Deleting remotes
+
+	git remote rm alias_name
+	
+### Listing repos
+
+	git remote    # just aliases
+	git remote -v # aliases with urls
+	
