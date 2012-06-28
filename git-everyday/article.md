@@ -1,11 +1,21 @@
 # Git everyday 
 
+## Adding
+
+Git has a staging area which is area between your working copy and repository. You can add files to the index using git add command. Git adds files with respect to the .gitignore file.
+
+	git add .  # adds all files
+	git add -u # adds deleted files
+	git add -A # shortcut for both previous steps
+	
+------
 
 ## Aliases
 
 Git allows us to create shortcuts for frequently used commands in form of aliases. 
 
 ### Adding aliases
+
 	git config --global alias.pl "pull origin master"
 	git config --global alias.ps "push -u origin master"
 	git config --global alias.st "status" 
@@ -77,7 +87,7 @@ Gits lets you define a number of remote repositories to work with.
 
 	git remote rm alias_name
 	
-### Listing repos
+### Listing remotes
 
 	git remote    # just aliases
 	git remote -v # aliases with urls
