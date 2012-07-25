@@ -2,3 +2,4 @@
 * linux-adding-users
 * git-everyday
 * linux-ssh
+* postgresql
