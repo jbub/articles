@@ -6,9 +6,11 @@ Things not to forget when deploying a django web application.
 
 ### Django related
 * 404, 500 pages
-* cron for deleting sessions: manage.py cleanup
+* cron cleanup job: manage.py cleanup
+* set SESSION\_COOKIE\_AGE
+* set ADMINS and MANAGERS
 * DEBUG = False
-* check and test emails, edit ADMINS and MANAGERS
+* check and test emails
 * cache headers
 * cache static files
 
