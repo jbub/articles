@@ -13,6 +13,7 @@ Things not to forget when deploying a django web application.
 * check and test emails
 * cache headers
 * cache static files
+* set project domain and name in sites application
 
 ### Lighttpd
 
@@ -29,7 +30,7 @@ Things not to forget when deploying a django web application.
 * favicons
 * robots.txt
 * sitemap.xml
-* meta tags
+* meta tags and headers
 
 
 
