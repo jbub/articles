@@ -15,7 +15,7 @@ Things not to forget when deploying a django web application.
 * cache static files
 * set project domain and name in sites application
 
-### Lighttpd
+### Lighttpd related
 
 * gzip
 * expire headers
@@ -24,7 +24,6 @@ Things not to forget when deploying a django web application.
 * include project_name.conf to projects.conf
 * conf/project_name.conf
 
-
 ### Seo related
 * analytics, webmaster tools
 * favicons
@@ -32,6 +31,8 @@ Things not to forget when deploying a django web application.
 * sitemap.xml
 * meta tags and headers
 
+### Website related
+* noscript message
 
 
 
