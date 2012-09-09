@@ -92,3 +92,28 @@ Gits lets you define a number of remote repositories to work with.
 	git remote    # just aliases
 	git remote -v # aliases with urls
 	
+------
+	
+## Submodules
+
+### Adding submodules
+
+	git submodule add user@host.com:repo.git path/to/submodule
+	
+### Initing and updating submodules
+	
+	# from the project root
+	git submodule init
+	git submodule update
+	
+### Deleting submodules
+
+First you need to delete submodule from the **.gitmodules** file located in your project root. Then delete submodule from your git **config** file located in **.git** folder of your project root. Then you need to run following command (note that there is no trailing slash):
+
+	git rm --cached path/to/submodule 
+	
+After that you just need to commit changes and delete the untracked submodule data.
+
+### Editing submodule contents from your project
+
+You can directly edit contents of your submodules from your project. After updating your submodules using submodule update command, your submodules are checked out, but not within a branch. So before making any changes, you need to be sure that your submodule is on specific branch. Now you can make the changes and then from the subproject root commit them.
