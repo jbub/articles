@@ -34,6 +34,20 @@ Things not to forget when deploying a django web application.
 ### Website related
 * noscript message
 
+### Applications
 
+#### django-tinymce
 
+In order to work with multiple domains or subdomains, following needs to be done.
+* add document.domain to tiny\_mce\_popup.js
+* add document.domain to templates with tinymce
 
+```
+{% extends "admin/change_form.html" %}
+
+{% block extrahead %}
+    <script type="text/javascript">document.domain = 'mydomain.com';</script>
+    {{ block.super }}
+{% endblock %}
+```
+	
