@@ -20,7 +20,7 @@ This is how it should be done:
 		my_list = [1, 2, 3]
 		return False
 
-### naming convections
+### naming conventions
 
 * **joined_lower** for functions, methods, attributes
 * **joined_lower** or **ALL_CAPITALS** for constants
