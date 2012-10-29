@@ -1,6 +1,9 @@
+Articles
+========
+
 * django-deployment
-* python-coding-style
-* linux-adding-users
 * git-everyday
+* linux-adding-users
 * linux-ssh
 * postgresql
+* python-coding-style
