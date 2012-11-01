@@ -117,3 +117,21 @@ After that you just need to commit changes and delete the untracked submodule da
 ### Editing submodule contents from your project
 
 You can directly edit contents of your submodules from your project. After updating your submodules using submodule update command, your submodules are checked out, but not within a branch. So before making any changes, you need to be sure that your submodule is on specific branch. Now you can make the changes and then from the subproject root commit them.
+
+------
+	
+## Reverting changes
+
+### Commited but not pushed to remote
+
+If you want to remove last commit but leave the files staged just use the --soft option for the git reset command. On the other hand, if you want to get rid of the changes to tracked files in the working tree use --hard option for that.
+
+	# HEAD~1 is shorthand to the first commit before HEAD
+	git reset --soft HEAD~1
+	
+### Commited and pushed to remote
+
+You cannot use git reset for this scenario, you want to use the git revert instead.
+	
+	# this will create a new commit reverting all changes by the last one
+	git revert HEAD
