@@ -6,4 +6,3 @@ Articles
 * linux-adding-users
 * linux-ssh
 * postgresql
-* python-coding-style
