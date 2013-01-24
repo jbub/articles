@@ -6,3 +6,4 @@ Articles
 * linux-adding-users
 * linux-ssh
 * postgresql
+* mongodb
