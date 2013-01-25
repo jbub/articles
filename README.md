@@ -7,3 +7,4 @@ Articles
 * linux-ssh
 * postgresql
 * mongodb
+* python-notes
