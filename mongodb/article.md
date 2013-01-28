@@ -43,5 +43,8 @@ db.test.findOne()
 
 # find all documents that satisfies the query specified
 db.test.find()
+
+# insert new document to dabase
+db.test.insert({"name": "john"})
 ```		
 
