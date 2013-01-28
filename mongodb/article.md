@@ -44,7 +44,7 @@ db.test.findOne()
 # find all documents that satisfies the query specified
 db.test.find()
 
-# insert new document to dabase
+# insert new document to database
 db.test.insert({"name": "john"})
 ```		
 
