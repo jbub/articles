@@ -146,7 +146,7 @@ db.items.find().sort({"score": -1}).skip(50).limit(20)
 db.items.count({"type": "car"})
 ```
 
-### Updating results: update(), $set, $inc
+### Updating results: update(), $set, $unset, $inc
 
 ```
 # update all items with the type equal to car to and set the score to 50
@@ -161,6 +161,8 @@ db.items.update({"type": "car"}, {$set: {"score": 50}})
 # note that this will keep the original structure of the document
 db.items.update({"type": "car"}, {$inc: {"score": 1}})
 
+# remove the score field from all the documents matching the query
+db.items.update({"type": "car"}, {$unset: {"score": 1}})
 ```
 
 ### Inserting
