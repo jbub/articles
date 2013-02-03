@@ -131,6 +131,38 @@ db.items.find({"categories": {$in: ["car", "plane"]}})
 db.items.find({"categories.name": "car"})
 ```
 
+### Sorting, skipping and limiting results: sort(), skip(), limit()
+
+```
+# select all items sorted by the score field in the descending order
+# skip first 50 items and limit the result to 20 items
+db.items.find().sort({"score": -1}).skip(50).limit(20)
+```
+
+### Counting results: count()
+
+```
+# count all items with the type equal to car
+db.items.count({"type": "car"})
+```
+
+### Updating results: update(), $set, $inc
+
+```
+# update all items with the type equal to car to and set the score to 50
+# note that this replaces the whole document with the new one {"score": 50}
+db.items.update({"type": "car"}, {"score": 50})
+
+# set the score to 50, create the score field if not present
+# note that this will keep the original structure of the document
+db.items.update({"type": "car"}, {$set: {"score": 50}})
+
+# increment the score by 1, set the score field to 1 if not present
+# note that this will keep the original structure of the document
+db.items.update({"type": "car"}, {$inc: {"score": 1}})
+
+```
+
 ### Inserting
 
 ```
