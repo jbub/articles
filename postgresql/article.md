@@ -4,8 +4,8 @@ Some commands for running your own local PostgreSQL server.
 
 ## Installing using macports
 
-	sudo port install postgresql84
-	sudo port install postgresql84-server
+	sudo port install postgresql92
+	sudo port install postgresql92-server
 	
 ## Creating default database instance
 
@@ -13,7 +13,7 @@ In order to run server, we need to initialize the database with the data directo
 
 	sudo mkdir -p /path/to/db
 	sudo chown postgres:postgres /path/to/db
-	sudo su postgres -c '/opt/local/lib/postgresql84/bin/initdb -D /path/to/db'
+	sudo su postgres -c '/opt/local/lib/postgresql92/bin/initdb -D /path/to/db'
 	
 ## Change the shell for the postgres user to bash
 
@@ -43,7 +43,7 @@ Note that after installing PostgreSQL, all local users can connect to the databa
 
 It is a good step to add the bin directory of PostgreSQL install to your path. Now you can use the pg_ctl control script directly.
 
-	export PATH='/opt/local/lib/postgresql84/bin':$PATH
+	export PATH='/opt/local/lib/postgresql92/bin':$PATH
 	
 ## Starting and stopping the server
 
