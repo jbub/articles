@@ -18,26 +18,33 @@ random.choice([1, 4, 7, 9]) >>> 7
 # return a k length list of unique elements chosen from the population sequence
 random.sample([1, 2, 3, 4], 2) >>> [4, 1]
 
+# shuffle the sequence t in place
+t = [1, 2, 3]
+random.shuffle(t)
+t >>> [3, 1, 2]
+
 # return a k length string of random characters chosen from the chars string
 ''.join(random.sample('abcdefg', 4)) >>> 'afge'
 
 # lists with duplicate items
-a = [1, 2, 3, 45, 6, 8, 8, 9, 3, 3]
-b = [7, 8, 9, 4, 5, 1, 2, 4, 5, 6]
+a = [1, 2, 3]
+b = [4, 1, 1, 3, 5]
 
 # notice that there are only unique items in the sets
-sa = set(a) # set([1, 2, 3, 6, 8, 9, 45])
-sb = set(b) # set([1, 2, 4, 5, 6, 7, 8, 9])
+sa = set(a) 
+sa >>> set([1, 2, 3])
+sb = set(b) 
+sb >>> set([1, 3, 4, 5])
 
-# returns a new set with elements common to the set and all others
-sa & sb # set([8, 1, 2, 6])
+# return a new set with elements common to the set and all others
+sa & sb >>> set([1, 3])
 
-# returns a new set with elements from the set and all others
-sa | sb # set([1, 2, 3, 4, 5, 6, 7, 8, 9, 45, 89])
+# return a new set with elements from the set and all others
+sa | sb >>> set([1, 2, 3, 4, 5])
 
-# returns a new set with elements in either the set or other but not both
-sa ^ sb # set([3, 4, 5, 7, 9, 45, 89])
+# return a new set with elements in either the set or other but not both
+sa ^ sb >>> set([2, 4, 5])
 
 # return a new set with elements in the set that are not in the others
-sa - sb # set([9, 3, 45])
+sa - sb >>> set([2])
 ```
