@@ -47,4 +47,11 @@ sa ^ sb >>> set([2, 4, 5])
 
 # return a new set with elements in the set that are not in the others
 sa - sb >>> set([2])
+
+# group a sequence of key-value pairs into a dictionary of sets
+s = [('add', 2), ('delete', 3), ('add', 4), ('edit', 10), ('edit', 6)]
+things = defaultdict(set)
+for action, number in s:
+    things[action].add(number)
+things >>> defaultdict(<type 'set'>, {'edit': set([10, 6]), 'add': set([2, 4]), 'delete': set([3])})
 ```
