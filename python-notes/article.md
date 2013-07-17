@@ -54,4 +54,7 @@ things = defaultdict(set)
 for action, number in s:
     things[action].add(number)
 things >>> defaultdict(<type 'set'>, {'edit': set([10, 6]), 'add': set([2, 4]), 'delete': set([3])})
+
+# create ordered dictionary representing days of month as keys with value equal to 0
+OrderedDict.fromkeys(xrange(1, calendar.monthrange(2013, 7)[1] + 1), 0)
 ```
