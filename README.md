@@ -8,3 +8,7 @@ Articles
 * postgresql
 * mongodb
 * python-notes
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jbub/articles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
