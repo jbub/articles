@@ -135,3 +135,13 @@ You cannot use git reset for this scenario, you want to use the git revert inste
 	
 	# this will create a new commit reverting all changes by the last one
 	git revert HEAD
+
+------
+
+## Merging
+
+### Dry run
+
+	# it will not allow fast forward neither it will commit any changes
+	# it will leave updated files in your staging area
+	git merge --no-ff --no-commit master
