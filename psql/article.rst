@@ -4,7 +4,7 @@ psql
 Basic info about user tables
 ----------------------------
 
-.. code-block:: python
+.. code-block:: sql
     
     SELECT relname,
            seq_scan,
