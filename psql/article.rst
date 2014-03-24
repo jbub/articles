@@ -16,4 +16,5 @@ Basic info about user tables
 .. code-block:: sql
     
     SELECT relname, seq_scan, idx_scan, n_live_tup, last_autovacuum, 
-           last_autoanalyze, autovacuum_count, autoanalyze_count  FROM pg_stat_user_tables;
+           last_autoanalyze, autovacuum_count, autoanalyze_count 
+    FROM pg_stat_user_tables;
