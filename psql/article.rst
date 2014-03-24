@@ -10,10 +10,10 @@ Info about tables of currently logged in user can be found in the ``pg_stat_user
 - ``seq_scan`` - number of sequential scans initiated on this table
 - ``idx_scan`` - number of index scans initiated on this table
 - ``n_live_tup`` - estimated number of live rows
-- ``last_autovacuum`` - last time at which this table was vacuumed by the autovacuum daemon
-- ``last_autoanalyze`` - last time at which this table was analyzed by the autovacuum daemon
+- ``last_autovacuum`` - last time this table was vacuumed by the autovacuum daemon
+- ``last_autoanalyze`` - last time this table was analyzed by the autovacuum daemon
 - ``autovacuum_count`` - number of times this table has been vacuumed by the autovacuum daemon
-- ``autoanalyze_count`` - Number of times this table has been analyzed by the autovacuum daemon
+- ``autoanalyze_count`` - number of times this table has been analyzed by the autovacuum daemon
 
 .. code-block:: sql
     
