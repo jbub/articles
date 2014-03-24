@@ -4,6 +4,8 @@ psql
 Basic info about user tables
 ----------------------------
 
+Info about tables of currently logged in user can be found in the ``pg_stat_user_tables`` table.
+
 - ``relname`` - name of the table
 - ``seq_scan`` - number of sequential scans initiated on this table
 - ``idx_scan`` - number of index scans initiated on this table
