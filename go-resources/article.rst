@@ -15,6 +15,7 @@ Books
 - `Learning GO <http://archive.miek.nl/projects/learninggo/index.html>`_
 - `Network programming in Go <http://jan.newmarch.name/go/>`_
 - `GO BOOTCAMP <http://www.golangbootcamp.com/>`_
+- `A Go Developer's Notebook <https://leanpub.com/GoNotebook>`_
 
 Blogs
 -----
@@ -25,6 +26,7 @@ Blogs
 - `Labix Blog <http://blog.labix.org/>`_
 - `Dave Cheney Go Blog <http://dave.cheney.net/category/golang>`_
 - `Gopher Academy Blog <http://blog.gopheracademy.com/>`_
+- `Unrolled BLog <http://blog.unrolled.ca/>`_
 
 Sites
 -----
@@ -38,3 +40,4 @@ Sites
 - `Go Code <http://golang.org/doc/code.html>`_
 - `Go Lang Weekly <http://www.golangweekly.com/>`_
 - `Go Reddit <http://www.reddit.com/r/golang/>`_
+- `Gophervids <http://gophervids.appspot.com/>`_
