@@ -21,3 +21,12 @@ Set theme in Community Edition.
     # set name property to your theme name
     name = bootstrap
 
+Disable intro area.
+
+.. code-block:: bash
+    
+    # in site definitions find the intro area
+    site definitions -> templates -> prototype -> areas -> main -> intro
+
+    # set enabled property to false
+    enabled = false
