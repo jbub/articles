@@ -30,3 +30,13 @@ Disable intro area.
 
     # set enabled property to false
     enabled = false
+
+Disable vertical navigation.
+
+.. code-block:: bash
+    
+    # in site definitions find the vertical navigation
+    site definitions -> templates -> prototype -> navigation -> vertical
+
+    # set enabled property to false
+    enabled = false
