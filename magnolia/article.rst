@@ -21,7 +21,7 @@ Set theme in Community Edition.
     # set name property to your theme name
     name = bootstrap
 
-Disable intro area.
+Disable intro area in Community Edition.
 
 .. code-block:: bash
     
@@ -31,7 +31,7 @@ Disable intro area.
     # set enabled property to false
     enabled = false
 
-Disable vertical navigation.
+Disable vertical navigation in Community Edition.
 
 .. code-block:: bash
     
