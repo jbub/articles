@@ -26,7 +26,7 @@ Disable intro area.
 .. code-block:: bash
     
     # in site definitions find the intro area
-    site definitions -> templates -> prototype -> areas -> main -> intro
+    site definitions -> templates -> prototype -> areas -> main -> areas -> intro
 
     # set enabled property to false
     enabled = false
